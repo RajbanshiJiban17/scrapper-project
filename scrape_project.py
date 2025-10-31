@@ -9,6 +9,21 @@
 # git add .
 # git commit -m "Finish Project"
 # git status -- modified project
+# git diff --> k k gareu vanerw dekhaune
+# git add . -> track garne feri
+# same as it is commit garne feri git ma afno lagi hernailai
+# aba github ma rakhne
+# create repository in github
+# copy paste git code from github
+# github ma pathaunu xa vane git push lekhne
+
+##################
+# 1. change the code
+# 2. git add
+# 3. git commit -m "Your message"
+# 4. git push
+
+
 
 import requests 
 from bs4 import BeautifulSoup
