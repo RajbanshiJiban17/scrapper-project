@@ -3,8 +3,19 @@
 # python -m pip install beautifulsoup4
 # => parse html
 
+# Git ma rakhne tarika
+# git config --global user.name "Jiban Chaudhary"
+# git config --global user.email "rajbanshijiban288@gmail.com"
+# git add .
+# git commit -m "Finish Project"
+# git status -- modified project
+
 import requests 
 from bs4 import BeautifulSoup
+import json
+import csv
+from tabulate import tabulate  # for table display
+import pandas as pd
 
 url = "https://books.toscrape.com/"
 
@@ -47,11 +58,11 @@ def scrape_books(url):
 books = scrape_books(url)
 
 with open("books.json","w", encoding="utf-8") as f:
-    import json
+    
     
     json.dump(books,f, indent=4, ensure_ascii=False)
     
-import csv
+
 
 # Save books data to CSV file
 with open("books.csv", "w", newline="", encoding="utf-8") as csvfile:
@@ -65,8 +76,7 @@ print("✅ Data saved to books.csv successfully!")
 
 
 
-from tabulate import tabulate  # for table display
-import pandas as pd
+
 if not books:
     print("No books found.")
 else:
